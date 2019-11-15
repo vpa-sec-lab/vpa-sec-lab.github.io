@@ -1,0 +1,128 @@
+<!DOCTYPE HTML>
+<!--
+	Urban by TEMPLATED
+	templated.co @templatedco
+	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+-->
+<html>
+	<head>
+		<title>Google Assistant</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body class="subpage">
+
+		<!-- Header -->
+			<header id="header">
+				<div class="logo"><a href="index.html">Dangerous Skills Got Certified <span> Measuring the
+Trustworthiness of Amazon Alexa Platform </span></a></div>
+				<a href="#menu">Menu</a>
+			</header>
+
+		<!-- Nav -->
+			<nav id="menu">
+				<ul class="links">
+					<li><a href="index.html">Home</a></li>
+					<li><a href="experimentsetup.html">Experiment Setup</a></li>
+					<li><a href="experimentresults.html">Experiment Results</a></li>
+					<li><a href="googleassistant.html">Google Assistant</a></li>
+					<li><a href="coppacompliance.html">COPPA Compliance</a></li>
+					<li><a href="mitigations.html">Mitigations</a></li>
+				</ul>
+			</nav>
+
+		<!-- Main -->
+			<div id="main">
+
+				<!-- Section -->
+					<section class="wrapper">
+						<div class="inner">
+							<header class="align-center">
+								<h1>Google Assistant</h1>
+								<p>We conducted a few experiments on Google Assistant platform as well. While Google does do a better job in the certification
+process based on our preliminary measurement, it is still not
+perfect and it does have potentially exploitable flaws that need
+to be tested more in the future. </p>
+							</header>
+							
+							<p>In total, we chose 9 representative content policies (listed in Table I) that are required by Amazon/Google,
+and submitted policy-violating actions to observe if they can
+pass the certification. The content policy guidelines stated by Google can be found <a href="https://developers.google.com/assistant/console/policies/general-policies" style="color: darkblue">here</a>.</p>
+							<p>a notable difference between the two
+is that Google requires an action-specific privacy policy for
+every action whereas Amazon requires developers to provide
+a developer privacy policy only when the skill explicitly
+states that it collects personal data. For other skills, it is not
+mandatory to provide one. </p>
+
+						</div>	
+					</section>
+
+				<!-- Section -->
+					<section class="wrapper style1">
+						<div class="inner">
+							<header class="align-center">
+								<h3>Continue reading..</h3>
+								<p>Read our other sections</p>
+							</header>
+							<div class="flex flex-3">
+								<div class="col align-center">
+									<div class="image round fit">
+										<img src="images/pic05.jpeg" alt="" />
+									</div>
+									<h3>COPPA Compliance</h3>
+									<p> It is possible that the third-party skills in Amazon Alexa
+suffers the legal risk of violating the Children’s Online Privacy
+Protection Act (COPPA) rules. . As demonstrated by our experiments, developers
+can certify skills that collect personal information from children without
+satisfying or honoring any of the requirements set forth by the FTC.</p>
+									<a href="coppacompliance.html" class="button">Learn More</a>
+								</div>
+								
+								<div class="col align-center">
+									<div class="image round fit">
+										<img src="images/pic01.jpg" alt="" />
+									</div>
+									<h3>Experiment Setup</h3>
+									<p>We performed “adversarial” experiments against the skill certification process of the Amazon Alexa platform. For testing the trustworthiness, we craft 132 policy-violating skills that intentionally violate specific policies defined by Amazon, and examine if it gets certified and published to the store or not.</p>
+									<a href="experimentsetup.html" class="button">Learn More</a>
+								</div>
+								<div class="col align-center">
+									<div class="image round fit">
+										<img src="images/pic03.jpg" alt="" />
+									</div>
+									<h3>Experiment Results</h3>
+									<p> Our results showed strong evidence that Alexa's
+skill certification process is implemented in a disorganized
+manner. We were able to publish all 132 skills that we submitted although some of them required a resubmission.</p>
+									<a href="coppacompliance.html" class="button">Learn More</a>
+								</div>
+							</div>
+						</div>
+					</section>
+
+			</div>
+
+		<!-- Footer -->
+		<!-- Footer -->
+			<footer id="footer">
+				<div class="copyright">
+					<ul class="icons">
+						<li><a href="https://github.com/vpa-sec-lab" class="icon fa-github"><span class="label">Github</span></a></li>
+						<li><a href="https://www.youtube.com/channel/UCOPqtnh5zhAsAKHi2B-yJsw" class="icon fa-youtube"><span class="label">Youtube</span></a></li>
+					</ul>
+					<p>VPA-Sec-Lab. Design: <a href="https://templated.co">TEMPLATED</a>.</p>
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
