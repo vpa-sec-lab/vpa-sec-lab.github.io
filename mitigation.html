@@ -6,7 +6,7 @@
 -->
 <html>
 	<head>
-		<title>Experiment Setup</title>
+		<title>Mitigation</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<link rel="stylesheet" href="assets/css/main.css" />
@@ -39,85 +39,57 @@ Trustworthiness of Amazon Alexa Platform </span></a></div>
 					<section class="wrapper">
 						<div class="inner">
 							<header class="align-center">
-								<h1>Experiment Setup</h1>
-								<p>We performed “adversarial” experiments against the skill certification process of the Amazon Alexa platform. For testing the trustworthiness, we craft 132 policy-violating skills that intentionally violate specific policies defined by Amazon, and examine if it gets certified and published to the store or not.</p>
+								<h1>Mitigation</h1>
+								<p>Based on our measurements and findings, we provide recommendations to help VA platform providers to enhance the
+trustworthiness of VA platforms</p>
 							</header>
 							<div class="flex flex-2">
 								<div class="col col2">
-									<p>We describe the Amazon Alexa platform from a developer’s
-perspective as illustrated</p>
+									
+									<p></p>
 									
 								</div>
-								<div class="image fit col2 ">
-									<img src="images/va_architecture.png" alt="" />
-								</div>
 							</div>
-							<p>In total, we built 132 skills that violates policies certified. The content policy guidelines stated by Amazon can be found <a href="https://developer.amazon.com/docs/custom-skills/policy-testing-for-an-alexa-skill.html" style="color: darkblue">here</a> and the privacy requirements can be found <a href="https://developer.amazon.com/docs/custom-skills/security-testing-for-an-alexa-skill.html#25-privacy-requirements" style="color: darkblue">here</a>.</p>
-							<p>Our skills violated the general content gidelines, the children specific policy guidelines as well as the privacy requirements.</p>
+							<p></p>
 
-							<h3>Violations of General Content Guidelines </h3>
-
-							<p>These policies restrict violence, promotions, health related information etc. Some live skills that have been published in the skills store are shown below.</p>
-
-							<iframe width="560" height="315" src="https://www.youtube.com/embed/gBDium41Sdw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-							<iframe width="560" height="315" src="https://www.youtube.com/embed/w0rHHCeQ9dc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-							<iframe width="560" height="315" src="https://www.youtube.com/embed/6Z3zKzmRjeY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-							<p>For the entire collection of malicious skills please visit our <a href="https://www.youtube.com/channel/UCOPqtnh5zhAsAKHi2B-yJsw" style="color: darkblue">youtube channel.</a></p>
+							<h4>1. Enforcing skill behavior integrity throughout the skill life-cycle.</h4>
  
+                            <p>
+                            	 Our experiment shows that developers can arbitrarily change a skill’s functionality after the certification. We call this a content changing attack.
+                            </p>	 
+                            	 <!-- include videos of content changing attack-->
+                            <p>
+                            To prevent content changing attacks, a continuous certification/vetting process is required. Whenever the developer makes a change to either the front-end or back-end, a re-certification process should be performed. 	 
+                            </p>
 
-							<h3>Violations of Children-Specific Policies</h3>
+							<h4>2. Ensuring description-to-functionality fidelity.</h4>
+ 								<!-- include image of our skill with disclaimer-->
+ 								<!-- include image of user comments about this-->
+                            <p>
+                            	A skill’s full description describes the functionality and usage of the skill and may also include what data will be collected.
+                            </p>	 
+                            <p>
+                            The minimum number of characters should be increased so that the developers are forced to explain the complete functionality that gives a better understanding about the skill and also can later be used by Amazon to check the consistency of the actual skill functionality against whats mentioned in the description.	
+                            </p>
+                            <p> 
+                            VA platform providers may develop a tool to automatically measure the description- to-functionality fidelity of existing skills in VA marketplaces.
+                            </p>
 
-							<p>These are specific policies that skills that are directed towards children should follow.</p>
-
-							<iframe width="420" height="315"
-							src="">
-							</iframe>
-
-							<h3>Violations of Privacy Requirements</h3>
-
-							<p>These are privacy requirements that restrict how and what data is collected from the users.</p>
-
-							<iframe width="420" height="315"
-							src="">
-							</iframe>
+                            <h4>3. Automated skill testing</h4>
+ 								<!-- include image of session counter in code-->
+ 								<!-- include image of slots and slot types-->
+                            <p>
+                            	To strictly enforce security policies in the certification process, it is desirable to design a voice-based testing tool to automate the testing of third-party skills
+                            </p>	 
+                            <p>
+                            VA platform providers may apply deep learning techniques to train a user simulation model to interact with third-party skills during the vetting.	
+                            </p>
+                            <p> 
+                            However, to fundamentally address the problem, VA platform providers need to require skill developers to provide the permissions to view their back-end code. In this case, a code analysis can be performed, which could greatly increase the strength of the certification process.                            </p>
 						</div>
 					</section>
 
-				<!-- Section -->
-					<section class="wrapper style1">
-						<div class="inner">
-							<header class="align-center">
-								<h2>Aliquam ipsum purus dolor</h2>
-								<p>Cras sagittis turpis sit amet est tempus, sit amet consectetur purus tincidunt.</p>
-							</header>
-							<div class="flex flex-3">
-								<div class="col align-center">
-									<div class="image round fit">
-										<img src="images/pic03.jpg" alt="" />
-									</div>
-									<p>Sed congue elit malesuada nibh, a varius odio vehicula aliquet. Aliquam consequat, nunc quis sollicitudin aliquet. </p>
-									<a href="#" class="button">Learn More</a>
-								</div>
-								<div class="col align-center">
-									<div class="image round fit">
-										<img src="images/pic05.jpg" alt="" />
-									</div>
-									<p>Sed congue elit malesuada nibh, a varius odio vehicula aliquet. Aliquam consequat, nunc quis sollicitudin aliquet. </p>
-									<a href="#" class="button">Learn More</a>
-								</div>
-								<div class="col align-center">
-									<div class="image round fit">
-										<img src="images/pic04.jpg" alt="" />
-									</div>
-									<p>Sed congue elit malesuada nibh, a varius odio vehicula aliquet. Aliquam consequat, nunc quis sollicitudin aliquet. </p>
-									<a href="#" class="button">Learn More</a>
-								</div>
-							</div>
-						</div>
-					</section>
+
 
 			</div>
 
