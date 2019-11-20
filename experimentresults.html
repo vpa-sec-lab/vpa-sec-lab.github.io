@@ -44,38 +44,18 @@ Trustworthiness of Amazon Alexa Platform </span></a></div>
 skill certification process is implemented in a disorganized
 manner. We were able to publish all 132 skills that we submitted although some of them required a resubmission.</p>
 							</header>
-							<div class="flex flex-2">
-								<div class="col col2">
-									<p>On submitting a skill, the Alexa certification team performs a check and then publishes or rejects a submission. The rejection mail includes a feedback explaining why the skill was rejected. Examples of two rejection mails and an acceptance mail are shown below.</p>	
-									<h4>Submission 1</h4>		
-								</div>
+							
 								
-								<div class="image fit col2  ">
-									<img src="images/pic06.png" alt="" />
-								</div>
-								<h4>Submission 2</h4>
-								<div class="image fit col2 ">	
-									<img src="images/pic07.png" alt="" />
-								</div>
-								<h4>Submission 3</h4>	
-								<div class="image fit col2 ">
-									<img src="images/pic08.png" alt="" />
-								</div>
-							</div>
-
-							<p> As it is clear from the image, we got 3 different feedbacks for each of the three submissions. The catch is that all three submissions had the exact same responses coded in the skill. While the first submission feedback denied allowing skills to any category, the second submission had a problem only with the kids category. THe third submission was approved even though the malicious response was still present.
-							</p>
-								
-							<p>Surprisingly, we successfully certified 102 skills on their
+							<p style="font-weight: bold">Surprisingly, we successfully certified 102 skills on their
 first submission. 30 skills were rejected. Privacy policy violations were the issue specified for 24 rejections while 6
 rejections were due to UI issues. For the rejected submissions,
 we received certification feedback from the Alexa certification
 team stating the policy that we broke. On resubmission we were able to get all the 132 skills certified.</p>
 
 
-							<p> Some live skills that have been published in the skills store are shown below.</p>
+							<p style="font-weight: bold"> Some live skills that have been published in the skills store are shown below.</p>
 
-							<p>For the entire collection of malicious skills please visit our <a href="https://www.youtube.com/channel/UCOPqtnh5zhAsAKHi2B-yJsw" style="color: darkblue">youtube channel.</a></p>
+							<p style="font-weight: bold">For the entire collection of malicious skills please visit our <a href="https://www.youtube.com/channel/UCOPqtnh5zhAsAKHi2B-yJsw" style="color: darkblue">youtube channel.</a></p>
 
 							<h3>Violations of General Content Guidelines</h3>
                             
@@ -118,6 +98,203 @@ team stating the policy that we broke. On resubmission we were able to get all t
 							</iframe>
 						</div>
 					</section>
+				
+                <section class="wrapper style2">
+						<div class="inner" id="res1">
+							<div class="flex flex-2">
+								<div class="col">
+								<h2>Findings</h2>
+								<ul class="links">
+									<li><a href="#res1" style="color: white">Inconsistency in checking</a></li>
+									<li><a href="#res2" style="color: white">Limited voice checking</a></li>
+									<li><a href="#res3" style="color: white">Overtrust placed on developers</a></li>
+									<li><a href="#res4" style="color: white">Humans are involved in certification</a></li>
+									<li><a href="#res5" style="color: white">Negligence during certification</a></li>
+									<li><a href="#res6" style="color: white">Possibly outsourced and not conducted in the US.</a></li>
+								</ul>
+								</div>
+							</div>
+						</div>
+				</section>	
+
+
+				<!-- Section -->
+					<section class="wrapper style1">
+						<div class="inner" id="res1">
+							<div class="flex">
+								<div class="col">
+									<h3>Inconsistency in Checking</h3>
+									<p style="font-weight: bold">On submitting a skill, the Alexa certification team performs a check and then publishes or rejects a submission. The rejection mail includes a feedback explaining why the skill was rejected. Examples of two rejection mails and an acceptance mail are shown below.</p>	
+							<div class="flex flex-2">
+								<div class="col">
+									
+									<h4>Submission 1</h4>		
+								</div>
+								
+								<div class="image fit col2  ">
+									<img src="images/pic06.png" alt="" />
+								</div>
+								<h4>Submission 2</h4>
+								<div class="image fit col2 ">	
+									<img src="images/pic07.png" alt="" />
+								</div>
+								<h4>Submission 3</h4>	
+								<div class="image fit col2 ">
+									<img src="images/pic08.png" alt="" />
+								</div>
+							</div>
+
+							<p style="font-weight: bold"> As it is clear from the images, we got 3 different feedbacks for each of the three submissions. The catch is that all three submissions had the exact same responses coded in the skill. While the first submission feedback denied allowing skills to any category, the second submission had a problem only with the kids category. The third submission was approved even though the malicious response was still present.
+							We encountered many instances of this type.
+							</p>
+							<p style="font-weight: bold">
+								We also had two story skills, that had the same exact stories which on submission led to one skill being accepted and the other being rejected stating the issue that the story had violence which is not suitable for children. 
+							</p>
+								</div>
+							</div>
+						</div>
+					</section>
+
+
+
+				<!-- Section -->
+					<section class="wrapper style2">
+						<div class="inner" id="res2">
+							<div class="flex">
+								<div class="col">
+									<h3>Limited voice checking</h3>
+                                    <p style="font-weight: bold"> We observed that the vetting tool (or certification team) tested the skill only for a limited number of times.
+                                    we concluded that the testing is done only through voice responses and the distribution page provided and not by checking the skill’s interaction model or the back-end code. It appears that the skill testing was done from a user’s perspective with checks conducted based on the information and access of the skill available to the users.</p>
+                                    <p style="font-weight: bold">
+                                    	To easily bypass certification, we can simply delay the malicious response being spoken out by using a session counter as shown below.
+                                    </p>	
+                                    <h4>1st submission: Rejected</h4>
+                                    <div class="image fit col2 ">
+
+										<img src="images/pic16.jpg" alt="" />
+								    </div>
+								    <h4>2nd submission: Certified</h4>
+                                    <div class="image fit col2 ">
+
+										<img src="images/pic17.jpg" alt="" />
+								    </div>
+
+									<!-- Include image with sessions and feedback. -->
+									<p></p>
+								</div>
+							</div>
+						</div>
+					</section>	
+
+
+
+				<!-- Section -->
+					<section class="wrapper style1">
+						<div class="inner" id="res3">
+							<div class="flex">
+								<div class="col">
+									<h3>Overtrust placed on developers</h3>
+									<p style="font-weight: bold">
+										From our experiments, we understood that Amazon has placed overtrust in third-party skill developers. The Privacy & Compliance form submitted by developers plays an important role in the certification process.
+										If the developer answers the questions in a way that specifies a violation of policy, then the skill is rejected on submission and if the developer answers dishonestly, the skill gets certified with a high probability.
+									</p>	
+                                 
+									<!-- Include image with security and compliance form and feedback. -->
+									<h4>1st submission: Rejected</h4>
+                                    <div class="image fit col2 ">
+
+										<img src="images/pic18.jpg" alt="" />
+								    </div>
+								    <h4>2nd submission: Certified</h4>
+                                    <div class="image fit col2 ">
+
+										<img src="images/pic19.jpg" alt="" />
+								    </div>
+									
+								</div>
+							</div>
+						</div>
+					</section>	
+		
+
+
+				<!-- Section -->
+					<section class="wrapper style2">
+						<div class="inner" id="res4">
+							<div class="flex">
+								<div class="col">
+									<h3>Humans are involved in certification</h3>
+
+									<p style="font-weight: bold">
+										The inconsistency in various skill certifications and rejections have led us to believe that the skill certification largely relies on manual testing. And the team in charge of skill certifications is not completely aware of the various policy requirements and guidelines being imposed by Amazon. This is especially due to the fact that we were able to publish skills that had a policy violation in the first response. 
+									</p>
+								</div>
+							</div>
+						</div>
+					</section>	
+
+
+
+				<!-- Section -->
+					<section class="wrapper style1">
+						<div class="inner" id="res5">
+							<div class="flex ">
+								<div class="col">
+									<h3>Negligence during certification</h3>
+									<p style="font-weight: bold">
+										We used various methods in order to purposefully create doubts to the certification team. For the custom slots that we created, we used the actual names like my_lastname and the sample utterance also explained clearly what information we were collecting from the user. 
+										This sample utterance clearly mentions that we are collecting the full name of the user. While checking the values stored in the Amazon DynamoDB database, we did see that the vetting tool or the certification team, had inputted full names (which are potentially fake names just for testing purposes) but still certified the skill.
+									</p>
+									<p style="font-weight: bold">
+										The certification team could have easily detected this and rejected the skill for collecting personal information through a kids skill. Additionally the skill had no developer privacy policy and the Privacy & Compliance form filled by the developer denied collecting personal information from users.
+									</p>	
+									<!-- Include image with slots, slottype values, sample utterances, dynamodb, no privacy policy distribution. -->
+									<div class="image fit col2 ">
+										<img src="images/pic13.jpeg" alt="" />
+										<img src="images/pic14.jpg" alt="" />
+										<img src="images/pic15.png" alt="" />
+								    </div>
+
+									<p style="font-weight: bold">
+										We also added disclaimers to high risk privacy policies and implied the existence of policy violating responses in the skill, but the certification team didnt bother to check the skill and find it but rather certified it anyway.	
+									</p>
+									<div class="image fit col2 ">
+										<img src="images/pic11.png" alt="" />
+								    </div>
+
+								</div>
+							</div>
+						</div>
+					</section>	
+
+				<!-- Section -->
+					<section class="wrapper style2">
+						<div class="inner" id="res6">
+							<div class="flex">
+								<div class="col">
+									<h3>Possibly outsourced and not conducted in the US</h3>
+									<div class="image fit col2 ">
+										<img src="images/pic12.png" alt="" />
+								    </div>
+									<!-- Timestamps collage -->
+									<p style="font-weight: bold">As shown in the image, all feedback emails (more than 190 including re-submissions) we received had timestamps between 11:40pm and 8:37am EST. Since there are no certifications happening at any time other than this specific time range, it is most likely that the review is manually done by a team out of US, most probably in Asia.</p>
+									<p style="font-weight: bold">While this can be an efficient solution for the company, it is very important that the team be made aware and given proper training about the policies in place in the various countries that the skill is intended for, to ensure that the skill doesn’t break any policies present in the country. From our experiments, we were able to understand that the certification team may not be properly aware about the COPPA regulations and certified skills that did not comply with COPPA.</p>
+								</div>
+							</div>
+						</div>
+					</section>		
+
+
+
+
+
+
+
+
+
+
+
+
 
 				<!-- Section -->
 					<section class="wrapper style1">
