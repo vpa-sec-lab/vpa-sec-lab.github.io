@@ -40,23 +40,22 @@ Trustworthiness of Amazon Alexa Platform </span></a></div>
 						<div class="inner">
 							<header class="align-center">
 								<h1>Google Assistant</h1>
-								<p>We conducted a few experiments on Google Assistant platform as well. While Google does do a better job in the certification
+								<p>We conducted a preliminary experiments on Google Assistant platform as well. While Google does do a better job in the certification
 process based on our preliminary measurement, it is still not
 perfect and it does have potentially exploitable flaws that need
 to be tested more in the future. </p>
 							</header>
 							
-							<p>In total, we chose 9 representative content policies (listed in Table I) that are required by Amazon/Google,
+							<p>In total, we submitted 273 policy-violating actions (listed in Table I) that are required by Amazon/Google,
 and submitted policy-violating actions to observe if they can
-pass the certification. The content policy guidelines stated by Google can be found <a href="https://developers.google.com/assistant/console/policies/general-policies" style="color: darkblue">here</a>.</p>
+pass the certification. As a result, 116 of them got approved. The content policy guidelines stated by Google can be found <a href="https://developers.google.com/assistant/console/policies/general-policies" style="color: darkblue">here</a>.</p>
 							<p>a notable difference between the two
 is that Google requires an action-specific privacy policy for
 every action whereas Amazon requires developers to provide
 a developer privacy policy only when the skill explicitly
 states that it collects personal data. For other skills, it is not
 mandatory to provide one. </p>
-<p>Totally, we submitted 273 policy-violated actions and 116 of them are approved.
-							</p>
+<p>Here are some of our approved actions. </p>
                                 <div class="flex flex-2">
                                 	<div class="col col1 align-center">
 										<div class="image fit">
@@ -74,7 +73,27 @@ mandatory to provide one. </p>
 										</div>
 									</div>
 								</div>	
+<p>Inconsistency of certification: we noticed that there were a lot of inconsistencies (same as in Amazon Alexa) in the feedback provided by the certification team after the submission of actions. In some cases, the action failed
+in certification while in others the same action passed certification even though there was no change</p>
+							
+							                                <div class="flex flex-2">
+                                	<div class="col col1 align-center">
+										<div class="image fit">
+											<img src="images/github_image.1_inconsistency_1.png" alt="" />
+										</div>
+									</div>
+									<div class="col col1 align-center">
+										<div class="image fit">
+											<img src="images/github_image.1_inconsistency_1.png" alt="" />
+										</div>
+									</div>
 
+								</div>	
+							
+<p>Inconsistency of families or not</p>
+							<p>Feedback Time</p>
+							<p>Dynamic testing</p>
+							<p>Bypassing</p>
 <p class="align-center" style="color: darkblue">Video Demos will be uploaded soon. Please come back later to view it.</p>
 
 						</div>	
