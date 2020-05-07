@@ -73,7 +73,22 @@ mandatory to provide one. </p>
 										</div>
 									</div>
 								</div>	
+<h3>Actions for families/kids </h3>
+									<p> Actions for families is Google’s program for family-friendly actions that engage the whole family. We submitted 85 actions that violate policy guidelines specific to actions intended for children. While 70 of these actions were rejected, 15 actions did pass the certification. From our experiment results, we could infer that Google has a strict certification procedure for actions for families. In this example, an action get rejected for families while approved for not families.</p>							
 
+								<div class="image fit col2 ">
+									<img src="github_image/3_family.png" alt="" />
+								</div>		
+							
+
+<h3>Bypassing Certification</h3>
+									<p>Several methods can be user to bypass the certification system. First we added the malicious response to a large number of possible responses so that the certification team would not encounter it by limited voice checking. The second method we used to bypass the certification stage was to ask for personal information indirectly. Rather than asking a user his/her name or age directly we could use a simple math trick that allows us to infer the age or casually add a "What should we call you?" at the later stages of an action’s functionality. </p>							
+
+
+								<div class="image fit col2 ">
+<img src="github_image/7_8_bypass_1_2.png" alt="" />
+								</div>								
+									
 									<h3>Inconsistency of certification </h3>
 									<p> We noticed that there were a lot of inconsistencies (same as in Amazon Alexa) in the feedback provided by the certification team after the submission of actions. In some cases, the action failed
 in certification while in others the same action passed certification even though there was no change. In some other cases, the actions were rejected citing different reasons.</p>							
@@ -81,23 +96,7 @@ in certification while in others the same action passed certification even thoug
 								<div class="image fit col2 ">
 									<img src="github_image/1_2_inconsistency.png" alt="" />
 								</div>
-							
-									<h3>Actions for families/kids </h3>
-									<p> Actions for families is Google’s program for family-friendly actions that engage the whole family. We submitted 85 actions that violate policy guidelines specific to actions intended for children. While 70 of these actions were rejected, 15 actions did pass the certification. From our experiment results, we could infer that Google has a strict certification procedure for actions for families. In this example, an action get rejected for families while approved for not families.</p>							
-
-								<div class="image fit col2 ">
-									<img src="github_image/3_family.png" alt="" />
-								</div>		
-							
-									<h3>Feedback Time for Certification</h3>
-									<p> For skill submissions, in most cases, we received the certification feedback within 24 hours. The certification process of Google actions
-took varying amounts of time. For submissions in 2019, most certification results were received within 1-2 days. However, for our recent submissions from February to April 2020, the certification feedback was received much faster. The average time is about 1 hour and about 10% of actions took less than 10 minutes to get a feedback.</p>							
-<p>We also find that in most cases, feedback emails we received from Amazon had timestamps between 11:40pm and 8:37am EST while Google actions were received between 10:51am and 1:19am EST (most 8:am to 7:00pm PST). This indicates that the Google certification team possibly works based on the US timezone, as opposed to the Alexa’s certification team. </p>
-
-								<div class="image fit col2 ">
-									<img src="github_image/4_5_cdf_dots.png" alt="" />
-								</div>	
-							
+									
 									<h3>Dynamic Testing </h3>
 									<p>Only 76 actions were available in the families/kids category of Google Assistant platform as of April 2020. We performed a dynamic testing on all these actions. We found one problematic action called "Smallfoot" that asks the user’s name. In addition, the URL provided as the action’s privacy policy does not lead to a webpage that contains a privacy policy but rather to a page advertising the company’s products.</p>							
 								<div class="flex flex-2">
@@ -105,14 +104,7 @@ took varying amounts of time. For submissions in 2019, most certification result
 										<img src="github_image/9_dynamic_testing.png" alt="" />
 									</div>
 </div>
-							
-									<h3>Bypassing Certification</h3>
-									<p>Several methods can be user to bypass the certification system. First we added the malicious response to a large number of possible responses so that the certification team would not encounter it by limited voice checking. The second method we used to bypass the certification stage was to ask for personal information indirectly. Rather than asking a user his/her name or age directly we could use a simple math trick that allows us to infer the age or casually add a "What should we call you?" at the later stages of an action’s functionality. </p>							
-
-
-								<div class="image fit col2 ">
-<img src="github_image/7_8_bypass_1_2.png" alt="" />
-								</div>	
+														
 							<h3>Post-Certification Vulnerability</h3>
 							<p> The back-end of an action can be updated after the certification and this will not require a re-certification to be made available in the production version. The entity sys.any can be used to store all kinds of data. By changing the content of the question in the back-end after certification, an action that uses this entity can collect any kind of information including personal information from the response provided by users.</p>	
 
@@ -122,6 +114,14 @@ took varying amounts of time. For submissions in 2019, most certification result
 <p class="align-center" style="color: darkblue">Video Demos will be uploaded soon. Please come back later to view it. </p>
 
 						</div>	
+						<h3>Feedback Time for Certification</h3>
+									<p> For skill submissions, in most cases, we received the certification feedback within 24 hours. The certification process of Google actions
+took varying amounts of time. For submissions in 2019, most certification results were received within 1-2 days. However, for our recent submissions from February to April 2020, the certification feedback was received much faster. The average time is about 1 hour and about 10% of actions took less than 10 minutes to get a feedback.</p>							
+<p>We also find that in most cases, feedback emails we received from Amazon had timestamps between 11:40pm and 8:37am EST while Google actions were received between 10:51am and 1:19am EST (most 8:am to 7:00pm PST). This indicates that the Google certification team possibly works based on the US timezone, as opposed to the Alexa’s certification team. </p>
+
+								<div class="image fit col2 ">
+									<img src="github_image/4_5_cdf_dots.png" alt="" />
+								</div>	
 					</section>
 
 				<!-- Section -->
