@@ -54,7 +54,8 @@ every action whereas Amazon requires developers to provide
 a developer privacy policy only when the skill explicitly
 states that it collects personal data. For other skills, it is not
 mandatory to provide one. </p>
-<p>Here are some approved actions: </p>
+<p style="font-weight: bold">For the entire collection of malicious skills please visit our <a href="https://www.youtube.com/channel/UC7uo7kntp4meRjSDFkNvJXQ" style="color: darkblue">youtube channel.</a></p>
+							<p>Here are some of examples:</p>
 				       <div class="flex flex-2">
 								<div class="col col2">
 									<iframe width="560" height="315" src="https://youtube.com/embed/SiiNBIaElzo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -79,11 +80,7 @@ engage with content outside of Alexa." and 2.f "Actions must not contain ads, in
 					    </div>   
 					       
 <h3>Actions for families/kids </h3>
-									<p> Actions for families is Google’s program for family-friendly actions that engage the whole family. We submitted 85 actions that violate policy guidelines specific to actions intended for children. While 70 of these actions were rejected, 15 actions did pass the certification. From our experiment results, we could infer that Google has a strict certification procedure for actions for families. In this example, an action get rejected for families while approved for not families.</p>							
-
-								<div class="image fit col2 ">
-									<img src="github_image/3_family.png" alt="" />
-								</div>		
+									<p> Actions for families is Google’s program for family-friendly actions that engage the whole family. We submitted 85 actions that violate policy guidelines specific to actions intended for children. While 70 of these actions were rejected, 15 actions did pass the certification. From our experiment results, we could infer that Google has a strict certification procedure for actions for families. In this example, an action get rejected for families while approved for not families.</p>								
 							
 
 <h3>Bypassing Certification</h3>
@@ -111,11 +108,8 @@ in certification while in others the same action passed certification even thoug
 </div>
 														
 							<h3>Post-Certification Vulnerability</h3>
-							<p> The back-end of an action can be updated after the certification and this will not require a re-certification to be made available in the production version. The entity sys.any can be used to store all kinds of data. By changing the content of the question in the back-end after certification, an action that uses this entity can collect any kind of information including personal information from the response provided by users.</p>	
+							<p> The back-end of an action can be updated after the certification and this will not require a re-certification to be made available in the production version. The entity sys.any can be used to store all kinds of data. By changing the content of the question in the back-end after certification, an action that uses this entity can collect any kind of information including personal information from the response provided by users. The example action "songer test" realized this kind of function.</p>	
 
-									<div class="image fit col2 ">						
-									<img src="github_image/6_bypass_3.png" alt="" />
-									</div>	
 								<h3>Feedback Time for Certification</h3>
 									<p> For skill submissions, in most cases, we received the certification feedback within 24 hours. The certification process of Google actions
 took varying amounts of time. For submissions in 2019, most certification results were received within 1-2 days. However, for our recent submissions from February to April 2020, the certification feedback was received much faster. The average time is about 1 hour and about 10% of actions took less than 10 minutes to get a feedback.</p>							
