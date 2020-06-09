@@ -40,12 +40,12 @@ Trustworthiness of Amazon Alexa Platform</span></a></div>
 						<div class="inner">
 							<header class="align-center">
 								<h1>Generic</h1>
-								<p>Voice assistants (VA) such as Amazon Alexa, Google Assistant and Apple Siri are rapidly gaining popularity in households and companies. Yet, we know little about whether the Amazon Alexa platform (which has a dominant market share) is trustworthy in terms of rejecting/suspending policy-violating skills in practice. We seek to empirically assess the trustworthiness and to characterize security risks of the Amazon Alexa platform</p>
+								<p>Voice assistants (VA) such as Amazon Alexa, Google Assistant and Apple Siri are rapidly gaining popularity in households and companies. Yet, we know little about whether the Amazon Alexa platform (which has a dominant market share) is trustworthy in terms of rejecting/ suspending policy-violating skills in practice. We seek to empirically assess the trustworthiness and to characterize security risks of the Amazon Alexa platform</p>
 							</header>
 							<p>In this work, we are curious to understand the extent to which Amazon Alexa (which has a dominant market) implements policy enforcement during the skill certification process to help developers improve the security of their skills, and prevent policy-violating skills from being published. Unfortunately, few research efforts have been undertaken to systematically address this critical problem. Existing work so far has mainly focused on exploiting the open voice/acoustic interfaces between users and speech recognition systems of VA devices.
 								</p>
 							<h3>Research questions</h3> 
-							<p>We seek to empirically assess the trustworthiness and to characterize security risks of the Amazon Alexa platform, and answer the following key questions: (1) Is the skill certification process trustworthy in terms of detecting policy-violating third-party skills? (2) What are the consequences of a lenient certification? Do policy-violating skills exist in the Alexa skills store? (3)</p>
+							<p>We seek to empirically assess the trustworthiness and to characterize security risks of the Amazon Alexa platform, and answer the following key questions: </p> <p> (1) Is the skill certification process trustworthy in terms of detecting policy-violating third-party skills?</p> <p> (2) What are the consequences of a lenient certification? Do policy-violating skills exist in the Alexa skills store?</p> <p> (3)Once a dangerous skill passes the certification process and becomes available in the skills store, how can possible adversarial developers increase the chance for their skill to reach more end users?</p> <p> (4) How does the Google Assistant’s certification system compare to that of Amazon Alexa?</p>
 						<h3> Measurements </h3> 
 							<p>In order to understand how rigorous the skill certification process is for the Amazon Alexa platform, we performed a set of “adversarial” experiments against it. Our experimental findings reveal that the Alexa skills store has not strictly enforced policy requirements and leaves major security responsibilities to developers. We also performed a comparative study with the Google Assistant platform, including a measurement of Google actions’ certification system, and a comparative analysis of their policy requirements. In addition, we conducted a dynamic testing of 825 skills under the kids category to identify existing risky skills. We examined how different factors may affect the outcome of skill discovery if there are conflicts/ambiguities with names for skill invocation. We conducted a user study with 78 participants to un- derstand the usage habits of people, when exploring new skills, when encountering anything inappropriate, and their trust in VA platforms.</p>
 						<h3> Findings</h3> 
@@ -65,6 +65,15 @@ Trustworthiness of Amazon Alexa Platform</span></a></div>
 								<p>Read our other sections</p>
 							</header>
 							<div class="flex flex-3">
+								
+								<div class="col align-center">
+									<div class="image round fit">
+										<img src="images/pic01.jpg" alt="" />
+									</div>
+									<h3>Experiment Setup</h3>
+									<p>We performed “adversarial” experiments against the skill certification process of the Amazon Alexa platform. For testing the trustworthiness, we craft 132 policy-violating skills that intentionally violate specific policies defined by Amazon, and examine if it gets certified and published to the store or not.</p>
+									<a href="experimentsetup.html" class="button">Learn More</a>
+								</div>
 								<div class="col align-center">
 									<div class="image round fit">
 										<img src="images/pic03.jpg" alt="" />
@@ -73,9 +82,9 @@ Trustworthiness of Amazon Alexa Platform</span></a></div>
 									<p> Our results showed strong evidence that Alexa's
 skill certification process is implemented in a disorganized
 manner. We were able to publish all 132 skills that we submitted although some of them required a resubmission.</p>
-									<a href="coppacompliance.html" class="button">Learn More</a>
+									<a href="experimentresults.html" class="button">Learn More</a>
 								</div>
-								<div class="col align-center">
+																<div class="col align-center">
 									<div class="image round fit">
 										<img src="images/pic04.png" alt="" />
 									</div>
@@ -85,19 +94,6 @@ process based on our preliminary measurement, it is still not
 perfect and it does have potentially exploitable flaws that need
 to be tested more in the future.</p>
 									<a href="googleassistant.html" class="button">Learn More</a>
-								</div>
-								
-								<div class="col align-center">
-									<div class="image round fit">
-										<img src="images/pic05.jpeg" alt="" />
-									</div>
-									<h3>COPPA Compliance</h3>
-									<p> It is possible that the third-party skills in Amazon Alexa
-suffers the legal risk of violating the Children’s Online Privacy
-Protection Act (COPPA) rules. . As demonstrated by our experiments, developers
-can certify skills that collect personal information from children without
-satisfying or honoring any of the requirements set forth by the FTC.</p>
-									<a href="coppacompliance.html" class="button">Learn More</a>
 								</div>
 							</div>
 						</div>
@@ -109,12 +105,10 @@ satisfying or honoring any of the requirements set forth by the FTC.</p>
 			<footer id="footer">
 				<div class="copyright">
 					<ul class="icons">
-						<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
-						<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
-						<li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
-						<li><a href="#" class="icon fa-snapchat"><span class="label">Snapchat</span></a></li>
+						<li><a href="https://github.com/vpa-sec-lab" class="icon fa-github"><span class="label">Github</span></a></li>
+						<li><a href="https://www.youtube.com/channel/UCOPqtnh5zhAsAKHi2B-yJsw" class="icon fa-youtube"><span class="label">Youtube</span></a></li>
 					</ul>
-					<p>&copy; Untitled. All rights reserved. Design: <a href="https://templated.co">TEMPLATED</a>. Images: <a href="https://unsplash.com">Unsplash</a>.</p>
+					<p>VPA-Sec-Lab. Design: <a href="https://templated.co">TEMPLATED</a>.</p>
 				</div>
 			</footer>
 
