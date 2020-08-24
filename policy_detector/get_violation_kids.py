@@ -42,12 +42,6 @@ for i in des:
 for i in des:
 	des[i]=des[i].replace('\n','').lower()
 
-###################### checking profanity ################################
-
-for i in des:
-	if profanity.contains_profanity(des[i]) and profanity2.contains_profanity(des[i]) and profanity3.is_profane(des[i]):
-		skills.append((i,"contains profanity"))
-
 ###################### checking data collection ################################
 
 question_words=['who', 'what', 'when', 'where', 'why','which', 'how', 'is', 'am', 'are', 'was', 'were', 'do', 'does', 'did', 'can', 'may', 'might', 'could', 'will', 'would', 'shall', 'should', 'had', 'has', 'have']
